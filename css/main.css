@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     color: #fff;
+    border-radius: 5%;
 }
 
 
@@ -10,7 +11,7 @@ body {
     background: url("../images/backdrop.svg") fixed;
     background-size: 100%;
     
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
     display: flex;
@@ -18,10 +19,13 @@ body {
 }
 
 header {
-    align-self: flex-end;
     width: 100%;
-    height: 10vh;
+    height: 15vh;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main {
@@ -33,8 +37,8 @@ main {
 footer {
     align-self: flex-end;
     width: 100%;
-    height: 10vh;
-    background: #ee0023;
+    height: 15vh;
+    background: #000;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -42,9 +46,23 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 100%;
 }
 
+a {
+    cursor: pointer;
+    background: transparent;
+
+    font-family: Adlam;
+    font-size: 1.5vw;
+    margin: 1.5vw;
+}
+
+.logo {
+    height: 120px;
+    width: 75px;
+}
+
 .name {
     font-family: Consolas;
-    font-size: 2em;
+    font-size: 2.5vw;
     
     align-self: center;
 
@@ -61,12 +79,21 @@ h1, h2, h3, h4, h5, h6, p {
 
 .intro-cont {
     width: 26vw;
-
-    margin-left: 10vw;
+    margin: 0 0 2vw 10vw;
 }
 
 .intro {
     font-family: Consolas;
+    font-size: 1.4vw;
+}
+
+.intro-text {
+    margin-left: 3vw;
+    text-wrap: wrap;
+    max-width: 20vw;
+
+    font-family: Consolas;
+    font-size: 1.4vw;
 }
 
 /* Colors */
@@ -104,6 +131,10 @@ h1, h2, h3, h4, h5, h6, p {
     visibility: hidden;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 /* Fonts */
 
 @font-face {
@@ -115,3 +146,21 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: Adlam;
     src: url(../fonts/ADLaMDisplay-Regular.ttf);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
