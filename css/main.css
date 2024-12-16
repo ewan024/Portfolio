@@ -34,7 +34,7 @@ header {
     top: 0;
     z-index: 99;
 
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(0.15vw);
 }
 
 main {
@@ -68,23 +68,19 @@ a {
     font-family: Adlam;
     font-size: 1.5vw;
     margin: 1.5vw;
+
+    text-decoration: none;
 }
 
 button {
     cursor: pointer;
-}
-
-select {
-    color: #fff;
-}
-
-select::invalid {
-    color: #f00;
+    background: #000;
+    border: 0;
 }
 
 .logo {
-    height: 120px;
-    width: 75px;
+    height: 6vw;
+    width: auto;
 }
 
 .name {
@@ -130,6 +126,39 @@ select::invalid {
     margin-left: 5vw;
 }
 
+.socials-cont {
+    display: flex;
+    flex-direction: row;
+    width: 15vw;
+    height: 7.5vh;
+
+    margin-right: 5vw;
+}
+
+.youtube {
+    width: 3.5vw;
+    height: 7.7vh;
+
+    margin: 0;
+}
+
+.instagram {
+    width: 3.5vw;
+    height: 4.8vh;
+
+    margin-top: 0.7vw;
+    margin-bottom: 0;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.discord {
+    width: 3.5vw;
+    height: 7.5vw;
+
+    margin: 0;
+}
+
 /* Colors */
 
 .open, .close, .slash {
@@ -165,6 +194,8 @@ select::invalid {
     visibility: hidden;
 }
 
+/* underline */
+
 .underline {
     text-decoration: underline;
 }
@@ -184,71 +215,69 @@ select::invalid {
 /* modal */
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 100; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    
+    padding-top: 10vw;
+
+    position: fixed;
+    z-index: 100;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    border-radius: 5%;
-  }
+
+    width: 100vw;
+    height: 100vw;
+    overflow: auto;
+    background: #00000071;
+
+    font-family: Consolas;
+    font-size: 2vw;
+
+    border-radius: 0;
+}
   
   /* Modal Content */
-  .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
+.modal-content {
+    width: 60vw;
+
     padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
+    margin: auto;
+
+    position: relative;
     animation-name: animatetop;
-    animation-duration: 0.4s
-  }
+    animation-duration: 0.4s;
+    background: #fbfbfb65;
+    border-radius: 0;
+}
   
   /* Add Animation */
-  @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
-  }
-  
-  @keyframes animatetop {
+@keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
-  }
+}
   
-  /* The Close Button */
-  .close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
+.modal-header {
+    height: 4vw;
+    background: #fbfbfb65;
+    border-radius: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-  }
-  
-  .modal-body {padding: 2px 16px;}
-  
-  .modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-  }
+.modal-body {
+    height: 10vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* responsiveness */
+
+@media only screen and (max-width: 650px) {
+    .logo {
+        display: none
+    }
+}
