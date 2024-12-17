@@ -1,11 +1,15 @@
+/* elements */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     color: #fff;
-    border-radius: 5%;
+    border-radius: 0;
 }
 
+html {
+    width: 100%;
+}
 
 body {
     background: url("../images/backdrop.svg") fixed;
@@ -38,7 +42,7 @@ header {
 }
 
 main {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
 }
@@ -67,7 +71,6 @@ a {
 
     font-family: Adlam;
     font-size: 1.5vw;
-    margin: 1.5vw;
 
     text-decoration: none;
 }
@@ -78,10 +81,54 @@ button {
     border: 0;
 }
 
+/* header content */
+
 .logo {
     height: 6vw;
     width: auto;
+
+    margin: 1.5vw;
 }
+
+.home {
+    margin: 1.5vw;
+
+    transition: all 0.3s ease;
+}
+
+.home:hover {
+    font-size: 2vw;
+
+    transition: all 0.3s ease;
+}
+
+.about {
+    margin: 1.5vw;
+
+    transition: all 0.3s ease;
+}
+
+.about:hover {
+    cursor: pointer;
+    font-size: 2vw;
+
+    transition: all 0.3s ease;
+}
+
+.projects {
+    margin: 1.5vw;
+
+    transition: all 0.3s ease;
+}
+
+.projects:hover {
+    cursor: pointer;
+    font-size: 2vw;
+
+    transition: all 0.3s ease;
+}
+
+/* home page */
 
 .name {
     font-family: Consolas;
@@ -119,6 +166,8 @@ button {
     font-size: 1.4vw;
 }
 
+/* footer content */
+
 .contact {
     font-family: Adlam;
     font-size: 2.5vw;
@@ -127,36 +176,31 @@ button {
 }
 
 .socials-cont {
-    display: flex;
-    flex-direction: row;
     width: 15vw;
     height: 7.5vh;
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
     margin-right: 5vw;
 }
 
 .youtube {
-    width: 3.5vw;
     height: 7.7vh;
-
-    margin: 0;
 }
 
 .instagram {
-    width: 3.5vw;
     height: 4.8vh;
-
-    margin-top: 0.7vw;
-    margin-bottom: 0;
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
 }
 
 .discord {
-    width: 3.5vw;
-    height: 7.5vw;
+    height: 7vh;
+}
 
-    margin: 0;
+.github {
+    height: 5.5vh;
 }
 
 /* Colors */
@@ -234,8 +278,7 @@ button {
 
     border-radius: 0;
 }
-  
-  /* Modal Content */
+
 .modal-content {
     width: 60vw;
 
@@ -248,8 +291,7 @@ button {
     background: #fbfbfb65;
     border-radius: 0;
 }
-  
-  /* Add Animation */
+
 @keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
@@ -276,8 +318,16 @@ button {
 
 /* responsiveness */
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 900px) {
     .logo {
         display: none
     }
+
+    .socials-cont {
+        visibility: hidden;
+    }
+}
+
+:root {
+    color-scheme: dark;
 }
