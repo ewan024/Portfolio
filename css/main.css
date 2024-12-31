@@ -181,18 +181,27 @@ button {
     font-family: Consolas;
     font-size: 1.4vw;
 }
+.github-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .project-text {
     font-family: Consolas;
     font-size: 2vw;
-    
-    align-self: center;
 
     margin: 2vw 0 1vw 0;
 }
 
 .github-big {
     height: 10vh;
+}
+
+.GitHub {
+    width: fit-content;
+    height: fit-content;
 }
 
 /* footer content */
