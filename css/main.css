@@ -1,4 +1,4 @@
-/* elements */
+/* primary element */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,6 +6,8 @@
     color: #fff;
     border-radius: 0;
 }
+
+/* main elements */
 
 html {
     width: 100%;
@@ -62,9 +64,11 @@ footer {
     align-self: flex-end;
 }
 
+/* specific elements */
+
 h1, h2, h3, h4, h5, h6, p {
     font: inherit;
-    font-size: 100%;
+    font-size: inherit;
 
     cursor: default;
 }
@@ -214,8 +218,8 @@ button {
 }
 
 .socials-cont {
-    width: 15vw;
-    height: 7.5vh;
+    width: fit-content;
+    height: fit-content;
 
     display: flex;
     flex-direction: row;
@@ -223,18 +227,25 @@ button {
     justify-content: space-between;
     
     margin-right: 5vw;
+    padding: 1vw;
 }
 
 .youtube {
     height: 7.7vh;
+    
+    margin-right: 0.2vw;
 }
 
 .instagram {
     height: 4.8vh;
+    
+    margin-right: 0.3vw;
 }
 
 .discord {
     height: 7vh;
+    
+    margin-right: 0.2vw;
 }
 
 .github {
@@ -356,17 +367,37 @@ button {
 
 /* responsiveness */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 400px) {
     header {
     justify-content: center;
     }
 
     .logo {
-        display: none
+        display: none;
     }
 
     .socials-cont {
-        visibility: hidden;
+        display: none;
+    }
+
+    .youtube {
+        display: none;
+    }
+    
+    .instagram {
+        display: none;
+    }
+    
+    .discord {
+        display: none;
+    }
+    
+    .github {
+        display: none;
+    }
+
+    footer {
+        justify-content: center;
     }
 }
 
