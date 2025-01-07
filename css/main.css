@@ -68,7 +68,7 @@ footer {
 
 h1, h2, h3, h4, h5, h6, p {
     font: inherit;
-    font-size: inherit;
+    font-size: 100%;
 
     cursor: default;
 }
@@ -138,6 +138,8 @@ button {
 
 /* main content */
 
+/* Home */
+
 .name {
     font-family: Consolas;
     font-size: 2.5vw;
@@ -154,6 +156,8 @@ button {
 
     margin-right: 10vw;
 }
+
+/* About me */
 
 .text-cont {
     width: 26vw;
@@ -185,6 +189,9 @@ button {
     font-family: Consolas;
     font-size: 1.4vw;
 }
+
+/* Projects */
+
 .github-cont {
     display: flex;
     flex-direction: column;
@@ -203,9 +210,13 @@ button {
     height: 10vh;
 }
 
-.GitHub {
+.gitHub {
     width: fit-content;
     height: fit-content;
+}
+
+.masterMind {
+    height: 50vh;
 }
 
 /* footer content */
