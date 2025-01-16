@@ -206,6 +206,13 @@ button {
     margin: 2vw 0 1vw 0;
 }
 
+.project-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .github-big {
     height: 10vh;
 }
@@ -215,7 +222,23 @@ button {
     height: fit-content;
 }
 
+.masterMind-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .masterMind {
+    height: 50vh;
+}
+
+.pinkGoose-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pinkGoose {
     height: 50vh;
 }
 
@@ -387,11 +410,28 @@ button {
         align-items: center;
     }
 
+    .masterMind {
+        height: 30vh;
+    }
+
+    .pinkGoose {
+        height: 30vh;
+    }
+
 }
 @media only screen and (max-width: 500px) {
     header {
-    justify-content: center;
+        justify-content: center;
     }
+
+    .masterMind {
+        height: 20vh;
+    }
+
+    .pinkGoose {
+        height: 20vh;
+    }
+
 
     .logo {
         display: none;
