@@ -264,26 +264,9 @@ button {
     padding: 1vw;
 }
 
-.youtube {
-    height: 7.7vh;
-    
-    margin-right: 0.2vw;
-}
-
-.instagram {
-    height: 4.8vh;
-    
-    margin-right: 0.3vw;
-}
-
-.discord {
-    height: 7vh;
-    
-    margin-right: 0.2vw;
-}
-
-.github {
-    height: 5.5vh;
+.social {
+    max-height: 7.7vh;
+    margin: 0 0.3vw;
 }
 
 /* Colors */
